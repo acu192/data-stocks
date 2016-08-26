@@ -4,10 +4,10 @@ all:
 	@echo 'make combine       # combine stuff'
 
 download:
-	python YahooDataGrabber.py tickers.txt
+	python code/YahooDataGrabber.py code/tickers.txt
 	rm -rf data
 	mkdir data
-	mv *.csv data/
+	mv code/*.csv data/
 
 combine:
-	python Combine.py data/
+	python code/Combine.py data/
