@@ -7,7 +7,7 @@ download:
 	python code/YahooDataGrabber.py code/tickers.txt
 	rm -rf data
 	mkdir data
-	mv code/*.csv data/
+	mv *.csv data/
 
 combine:
 	python code/Combine.py data/
