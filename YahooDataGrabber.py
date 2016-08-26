@@ -64,7 +64,7 @@ def main():
     else:
         tickers = open(sys.argv[1]).read().split()
     start_date = '20000101'
-    end_date = '20161231'
+    end_date = '20160801'
     in_queue = Queue.Queue()
     out_queue = Queue.Queue()
 
